@@ -52,4 +52,4 @@ In order to implement something similar you will need to know:
 - what are Bezier curves and how they are defined in SVG format
 - how we can control individual points
 
-How to build it? Check out [Chapter 1](https://github.com/MaxStalker/boring-svg-manipulation/blob/main/docs/chapter-1.md)
+How to build it? Check out [Chapter 1](./docs/chapter-1.md)
