@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chapter 1: Easy, Peasy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-full w-full m-0 bg-gray-100">
+    <div class="flex h-full flex-col items-center justify-center">
+      <div class="flex flex-col p-10 bg-white rounded-xl shadow-md relative">
+        <a
+          href="/"
+          title="Back to Index"
+          class="text-xl absolute top-5 left-5 rounded-full shadow py-2 px-6 text-gray-800 hover:bg-gray-100 transition-all hover:shadow-none"
+          >Back</a
+        >
+        <a
+          href="/src/chapter-2/index.html"
+          title="To Chapter 2: A bit more complicated"
+          class="text-xl absolute top-5 right-5 rounded-full shadow py-2 px-6 text-gray-800 hover:bg-gray-100 transition-all hover:shadow-none"
+          >Next</a
+        >
+        <h1 class="absolute bottom-5 left-5 text-xl text-gray-400">
+          Chapter 1: Easy, Peasy
+        </h1>
+        <svg
+          width="640"
+          height="480"
+          viewBox="0 0 640 480"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id="target"
+            d="M146.034 288.994L150.967 140.994L498.945 139.006L491.052 287.005L146.034 288.994Z"
+            stroke="#CCC"
+            stroke-width="1"
+            stroke-dasharray="4 6"
+          />
+          <path id="guide" d="M145 366L499 420" stroke="orange" />
+
+          <path id="offsetShape" d="" stroke="green" stroke-width="4" />
+        </svg>
+      </div>
+    </div>
+    <script type="module" src="warp.js"></script>
+  </body>
+</html>
