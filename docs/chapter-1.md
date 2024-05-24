@@ -381,5 +381,5 @@ That’s a win! We can apply this to any shape now, right?
 
 ## P.S.
 
-Second chapter will be more fun, I promise. Stay tuned! 😁
+[Second chapter](https://github.com/MaxStalker/boring-svg-manipulation/blob/main/docs/chapter-2/README.md) will be more fun, I promise. Stay tuned! 😁
 In the meantime, I’ve compiled the code from above into sandbox, so you can [fork it here](https://codesandbox.io/p/sandbox/svg-manipulation-w5x2gr) 👈
