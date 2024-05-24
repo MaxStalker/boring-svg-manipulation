@@ -14,7 +14,7 @@ Pick your font, write a letter, convert to outline strokes and export to SVG. He
   />
 ```
 
-![canvas (4).jpg](Chapter%202%20A%20Bit%20More%20Complicated%207baa21a86f29481f8f786d8dd7f2a045/canvas_(4).jpg)
+![canvas (4).jpg](images/canvas_(4).jpg)
 
 Let’s clean up the `d` path and see what is happening inside that instruction:
 
@@ -96,7 +96,7 @@ export function offsetImproved(guidePoints) {
 
 Now it works, but vertical and horizontal instructions were simply ignored and they break the flow:
 
-![Untitled](Chapter%202%20A%20Bit%20More%20Complicated%207baa21a86f29481f8f786d8dd7f2a045/Untitled.png)
+![Untitled](images/Untitled.png)
 
 We need to convert those `H` and `V` into `L` instructions. In order to do it, we can grab previous instruction and extract necessary coordinates from it. We will also convert this into reducer function instead of map, since we want to access already modified point:
 
@@ -170,21 +170,21 @@ Now let’s import it and update the code:
   const offsetPoints = targetPoints.reduce(offsetImproved(guidePoints), []);
 ```
 
-![Untitled](Chapter%202%20A%20Bit%20More%20Complicated%207baa21a86f29481f8f786d8dd7f2a045/Untitled%201.png)
+![Untitled](images/Untitled%201.png)
 
 Much better! Try to adjust guideline and invert the slope.
 
-![Untitled](Chapter%202%20A%20Bit%20More%20Complicated%207baa21a86f29481f8f786d8dd7f2a045/Untitled%202.png)
+![Untitled](images/Untitled%202.png)
 
 Create new character and give it a go:
 
-![Untitled](Chapter%202%20A%20Bit%20More%20Complicated%207baa21a86f29481f8f786d8dd7f2a045/Untitled%203.png)
+![Untitled](images/Untitled%203.png)
 
 …and some more:
 
-![Untitled](Chapter%202%20A%20Bit%20More%20Complicated%207baa21a86f29481f8f786d8dd7f2a045/Untitled%204.png)
+![Untitled](images/Untitled%204.png)
 
-![Untitled](Chapter%202%20A%20Bit%20More%20Complicated%207baa21a86f29481f8f786d8dd7f2a045/Untitled%205.png)
+![Untitled](images/Untitled%205.png)
 
 ![https://media2.giphy.com/media/l0K4mq3yRICCW4czm/giphy.gif?cid=7941fdc689r919aluoaa3dcjy26uudstbf7ff1db84qqo7uq&ep=v1_gifs_search&rid=giphy.gif&ct=g](https://media2.giphy.com/media/l0K4mq3yRICCW4czm/giphy.gif?cid=7941fdc689r919aluoaa3dcjy26uudstbf7ff1db84qqo7uq&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
@@ -192,7 +192,7 @@ We were this 🤏close.
 
 Now what is happening there. We shall comment out offset shape, so we could see the original one. 
 
-![Untitled](Chapter%202%20A%20Bit%20More%20Complicated%207baa21a86f29481f8f786d8dd7f2a045/Untitled%206.png)
+![Untitled](images/Untitled%206.png)
 
 This looks fine.
 
@@ -291,11 +291,11 @@ Now we can update the call in our main code and keep the rest unchanged:
   const offsetPoints = offsetWithLines(targetPoints, guidePoints);
 ```
 
-![Untitled](Chapter%202%20A%20Bit%20More%20Complicated%207baa21a86f29481f8f786d8dd7f2a045/Untitled%207.png)
+![Untitled](images/Untitled%207.png)
 
-![Untitled](Chapter%202%20A%20Bit%20More%20Complicated%207baa21a86f29481f8f786d8dd7f2a045/Untitled%208.png)
+![Untitled](images/Untitled%208.png)
 
-![Untitled](Chapter%202%20A%20Bit%20More%20Complicated%207baa21a86f29481f8f786d8dd7f2a045/Untitled%209.png)
+![Untitled](images/Untitled%209.png)
 
 ![https://media4.giphy.com/media/glvyCVWYJ21fq/giphy.gif?cid=7941fdc690lly59kxhqeskh79wff2r0wx6us1dl2h3ximnqk&ep=v1_gifs_search&rid=giphy.gif&ct=g](https://media4.giphy.com/media/glvyCVWYJ21fq/giphy.gif?cid=7941fdc690lly59kxhqeskh79wff2r0wx6us1dl2h3ximnqk&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
@@ -381,8 +381,8 @@ Now we can utilize them and rewrite our main procedure:
   }
 ```
 
-![Untitled](Chapter%202%20A%20Bit%20More%20Complicated%207baa21a86f29481f8f786d8dd7f2a045/Untitled%2010.png)
+![Untitled](images/Untitled%2010.png)
 
-![Untitled](Chapter%202%20A%20Bit%20More%20Complicated%207baa21a86f29481f8f786d8dd7f2a045/Untitled%2011.png)
+![Untitled](images/Untitled%2011.png)
 
 Easy! 😤
