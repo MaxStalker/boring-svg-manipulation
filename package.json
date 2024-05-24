@@ -1,0 +1,17 @@
+{
+  "name": "svg-alteration-clean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parse-svg-path": "^0.1.2",
+    "prettier": "^3.2.5",
+    "vite": "^5.2.11"
+  }
+}
